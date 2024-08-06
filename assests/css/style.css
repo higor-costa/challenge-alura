@@ -8,3 +8,11 @@
   --aviso: #3B3936;
   --branco: #ffffff;
 }
+
+* {
+  font-family: var(--font-poppins);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
