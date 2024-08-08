@@ -10,37 +10,40 @@
   </head>
   <body>
     <main class="conteudo">
-      <header class="conteudo__cabecalho">
-        <img class="conteudo__logo" src="./assests/img/logo.svg" alt="Logo" />
-      </header>
-      <textarea class="conteudo__caixa-texto" name="caixaTexto" id="caixaTexto"></textarea>
-      <section class="botoes">
-        <div class="aviso">
-          <img class="aviso__icone" src="./assests/img/exclamacao-aviso.svg" alt="Icone de exclamação" />
-          <p class="aviso__texto">Apenas letras minúsculas e sem acento.</p>
-        </div>
-        <button class="botoes__botao botoes__botao--criptografar">
-          Criptografar
-        </button>
-        <button class="botoes__botao botoes__botao--descriptografar">
-          Descriptografar
-        </button>
+      <section class="conteudo-conteiner">
+        <header class="conteudo__cabecalho">
+          <img class="conteudo__logo" src="./assests/img/logo.svg" alt="Logo" />
+        </header>
+        <textarea class="conteudo__caixa-texto" name="caixaTexto" id="caixaTexto"></textarea>
+        <section class="botoes">
+          <div class="aviso">
+            <img class="aviso__icone" src="./assests/img/exclamacao-aviso.svg" alt="Icone de exclamação" />
+            <p class="aviso__texto">Apenas letras minúsculas e sem acento.</p>
+          </div>
+          <button class="botoes__botao botoes__botao--criptografar">
+            Criptografar
+          </button>
+          <button class="botoes__botao botoes__botao--descriptografar">
+            Descriptografar
+          </button>
+        </section>
+      </section>
+
+      <section class="resultado">
+        <section class="mensagem">
+          <img class="mensagem__img" src="./assests/img/ilustracao.svg" alt="Ilustracao" />
+          <h2 class="mensagem__titulo">Nenhuma mensagem encontrada</h2>
+          <p class="mensagem__paragrafo">
+            Digite um texto que você deseja criptografar ou descriptografar.
+          </p>
+        </section>
+        <section class="resultado__textos">
+          <p class="resultado__texto-decodificado"></p>
+          <button class="resultado__botao-copiar">Copiar</button>
+        </section>
       </section>
     </main>
 
-    <section class="resultado">
-      <section class="mensagem">
-        <img class="mensagem__img" src="./assests/img/ilustracao.svg" alt="Ilustracao" />
-        <h2 class="mensagem__titulo">Nenhuma mensagem encontrada</h2>
-        <p class="mensagem__paragrafo">
-          Digite um texto que você deseja criptografar ou descriptografar.
-        </p>
-      </section>
-      <section class="resultado__textos">
-        <p class="resultado__texto-decodificado"></p>
-        <button class="resultado__botao-copiar">Copiar</button>
-      </section>
-    </section>
 
     <footer class="rodape">
       <div class="rodape__conteiner">
