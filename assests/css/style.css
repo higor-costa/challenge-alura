@@ -69,3 +69,48 @@ body {
 .conteudo__caixa-texto::-webkit-scrollbar-thumb:hover {
   background-color: var(--aviso); 
 }
+
+/* BOTÕES */
+
+.botoes {
+  width: 80%;
+}
+
+.aviso {
+  display: flex;
+  gap: 5px;  
+  margin-bottom: 16px;
+}
+
+.aviso__texto {
+  color: var(--aviso);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.botoes__botao {
+  padding: 13px;
+  width: 12rem;
+  border-radius: 24px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: box-shadow .3s;
+}
+
+.botoes__botao:hover {
+  box-shadow: 
+    0px 0px 0px 2px var(--primaria),
+    0px 0px 4px 4px var(--secundaria);
+}
+
+.botoes__botao--criptografar {
+  background: var(--secundaria);
+  color: var(--branco);
+  margin-right: 24px;
+}
+
+.botoes__botao--descriptografar {
+  color: var(--secundaria);
+  border: 1px solid var(--secundaria);
+}
