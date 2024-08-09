@@ -184,3 +184,21 @@ body {
   background: transparent;
   color: var(--branco);
 }
+
+/* RODAPÉ */
+
+.rodape {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--secundaria);
+  padding: 15px 0;
+}
+
+.rodape__conteiner {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: var(--branco);
+}
