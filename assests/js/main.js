@@ -6,3 +6,21 @@ const botaoCriptografar = acessaElementosDom('#botao-criptografar');
 function acessaElementosDom(elemento) {
   return document.querySelector(elemento);
 }
+
+function verificaSeTextoValido() {
+  const textoParaDecodificar = caixaTexto.value;
+  const RegExp = /[A-ZÀ-ÖØ-Ýà-öø-ÿ]/u;
+  // Explicação da Expressão Regular
+  // [A-Z]: Corresponde a qualquer letra maiúscula do alfabeto inglês.
+  // À-Ö: Corresponde a letras maiúsculas com acento no intervalo Unicode de À a Ö.
+  // Ø-Ý: Corresponde a letras maiúsculas com acento no intervalo Unicode de Ø a Ý.
+  // à-ö: Corresponde a letras minúsculas com acento no intervalo Unicode de à a ö.
+  // ø-ÿ: Corresponde a letras minúsculas com acento no intervalo Unicode de ø a ÿ.
+  // /u: O modificador u indica que a expressão deve ser tratada como Unicode, o que é útil para caracteres acentuados.
+
+  RegExp.test(textoParaDecodificar)
+    ? alert('O texto deve conter apenas letras minúsculas e sem acento.')
+    : decodificaTexto();
+}
+
+botaoCriptografar.addEventListener('click', verificaSeTextoValido);
