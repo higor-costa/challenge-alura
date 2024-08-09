@@ -127,3 +127,21 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+.mensagem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--branco);
+  text-align: center;
+  justify-content: center;
+}
+
+.mensagem__img {
+  width: 80%;
+  display: block;
+}
+
+.mensagem__titulo {
+  margin: 2rem 0 1rem 0;
+}
