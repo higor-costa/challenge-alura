@@ -145,3 +145,42 @@ body {
 .mensagem__titulo {
   margin: 2rem 0 1rem 0;
 }
+
+.resultado__textos {
+  display: none;
+  height: 100%;
+  color: var(--branco);
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.resultado__conteiner-texto-decodificado {
+  overflow-y: auto;
+}
+
+.resultado__conteiner-texto-decodificado::-webkit-scrollbar {
+  width: 10px; 
+}
+
+.resultado__conteiner-texto-decodificado::-webkit-scrollbar-thumb {
+  background-color: var(--primaria); 
+  border-radius: 10px; 
+  transition: background-color 0.5s;
+}
+
+.resultado__botao-copiar {
+  background: var(--branco);
+  color: var(--secundaria);
+  padding: 15px;
+  border: none;
+  border: 1px solid var(--branco);
+  border-radius: 24px;
+  cursor: pointer;
+  transition: background-color .5s, color .5s;
+}
+
+.resultado__botao-copiar:hover {
+  background: transparent;
+  color: var(--branco);
+}
