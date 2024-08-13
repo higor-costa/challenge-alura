@@ -42,7 +42,7 @@ function verificaSeTextoValido() {
 
   RegExp.test(textoParaDecodificar)
     ? alert('O texto deve conter apenas letras minúsculas e sem acento.')
-    : decodificaTexto();
+    : criptografaTexto(textoParaDecodificar);
 }
 
 botaoCriptografar.addEventListener('click', verificaSeTextoValido);
