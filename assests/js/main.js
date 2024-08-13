@@ -10,6 +10,25 @@ function acessaElementosDom(elemento) {
   return document.querySelector(elemento);
 }
 
+function criptografaTexto(texto) {
+  const textoCriptografo = texto.replace(/[aeiou]/g, (letra) => {
+    switch (letra) {
+      case 'a':
+        return 'ai';
+      case 'e':
+        return 'enter';
+      case 'i':
+        return 'imes';
+      case 'o':
+        return 'ober';
+      case 'u':
+        return 'ufat';
+      default:
+        return letra;
+    }
+  });
+}
+
 function verificaSeTextoValido() {
   const textoParaDecodificar = caixaTexto.value;
   const RegExp = /[A-ZÀ-ÖØ-Ýà-öø-ÿ]/u;
