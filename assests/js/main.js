@@ -11,6 +11,28 @@ function acessaElementosDom(elemento) {
   return document.querySelector(elemento);
 }
 
+function descriptografiaTexto() {
+  const texto = caixaTexto.value;
+  const textoDescriptografado = texto.replace(/(ai|enter|imes|ober|ufat)/g, (chave) => {
+    switch (chave) {
+      case 'ai':
+        return 'a';
+      case 'enter':
+        return 'e';
+      case 'imes':
+        return 'i';
+      case 'ober':
+        return 'o';
+      case 'ufat':
+        return 'u';
+      default:
+      return letra;
+    }
+  });
+
+  exibeResultadoCriptografia(textoDescriptografado);
+}
+
 function exibeResultadoCriptografia(textoCriptografo) {
   textoDecodificado.innerText = `${textoCriptografo}`;
   mensagemPadrao.style.display = 'none'; 
