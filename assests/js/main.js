@@ -33,6 +33,8 @@ function criptografaTexto(texto) {
         return letra;
     }
   });
+
+  exibeResultadoCriptografia(textoCriptografo);
 }
 
 function verificaSeTextoValido() {
