@@ -2,6 +2,7 @@
 
 const caixaTexto = acessaElementosDom('#caixaTexto');
 const botaoCriptografar = acessaElementosDom('#botao-criptografar');
+const botaoDescriptografar = acessaElementosDom('#botao-descriptografar');
 const textoDecodificado = acessaElementosDom('#texto-decodificado');
 const conteinerResultado = acessaElementosDom('#conteiner-resultado');
 const mensagemPadrao = acessaElementosDom('#mensagem-padrao');
