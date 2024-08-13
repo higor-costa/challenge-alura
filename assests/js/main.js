@@ -30,17 +30,17 @@ function descriptografiaTexto() {
     }
   });
 
-  exibeResultadoCriptografia(textoDescriptografado);
+  exibeResultadoDecodificacao(textoDescriptografado);
 }
 
-function exibeResultadoCriptografia(textoCriptografo) {
-  textoDecodificado.innerText = `${textoCriptografo}`;
+function exibeResultadoDecodificacao(texto) {
+  textoDecodificado.innerText = `${texto}`;
   mensagemPadrao.style.display = 'none'; 
   conteinerResultado.style.display = 'flex'; 
 }
 
 function criptografaTexto(texto) {
-  const textoCriptografo = texto.replace(/[aeiou]/g, (letra) => {
+  const textoCriptografado = texto.replace(/[aeiou]/g, (letra) => {
     switch (letra) {
       case 'a':
         return 'ai';
@@ -57,7 +57,7 @@ function criptografaTexto(texto) {
     }
   });
 
-  exibeResultadoCriptografia(textoCriptografo);
+  exibeResultadoDecodificacao(textoCriptografado);
 }
 
 function verificaSeTextoValido() {
