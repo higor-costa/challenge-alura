@@ -77,3 +77,4 @@ function verificaSeTextoValido() {
 }
 
 botaoCriptografar.addEventListener('click', verificaSeTextoValido);
+botaoDescriptografar.addEventListener('click', descriptografiaTexto);
