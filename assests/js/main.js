@@ -10,6 +10,12 @@ function acessaElementosDom(elemento) {
   return document.querySelector(elemento);
 }
 
+function exibeResultadoCriptografia(textoCriptografo) {
+  textoDecodificado.innerText = `${textoCriptografo}`;
+  mensagemPadrao.style.display = 'none'; 
+  conteinerResultado.style.display = 'flex'; 
+}
+
 function criptografaTexto(texto) {
   const textoCriptografo = texto.replace(/[aeiou]/g, (letra) => {
     switch (letra) {
