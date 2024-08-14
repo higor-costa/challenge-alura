@@ -63,7 +63,7 @@ function criptografaTexto(texto) {
 
 function verificaSeTextoValido() {
   const textoParaDecodificar = caixaTexto.value;
-  const RegExp = /[A-ZÀ-ÖØ-Ýà-öø-ÿ]/u;
+  const RegExp = /[A-ZÀ-Öà-ö@#$%^&*()_+={}\[\]|\\;:'"<>/`~]/u;
   // Explicação da Expressão Regular
   // [A-Z]: Corresponde a qualquer letra maiúscula do alfabeto inglês.
   // À-Ö: Corresponde a letras maiúsculas com acento no intervalo Unicode de À a Ö.
