@@ -42,14 +42,15 @@ body {
 
 .conteudo__caixa-texto {
   width: 80%;
-  height: 10rem;
-  border: none;
+  height: 15rem;
+  border: 1px solid var(--secundaria);
   border-radius: 8px;
   resize: none;
   background: transparent;
   color: var(--branco);
   font-size: 22px;
-  margin: 5rem 0 2rem 0;
+  margin: 4rem 0 2rem 0;
+  padding: 10px;
 }
 
 .conteudo__caixa-texto::placeholder {
