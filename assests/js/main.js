@@ -66,7 +66,7 @@ function verificaSeTextoValido() {
   const RegExp = /[A-ZÀ-Öà-ö@#$%^&*()_+={}\[\]|\\;:'"<>/`~]/u;
 
   RegExp.test(textoParaDecodificar)
-    ? alert('O texto deve conter apenas letras minúsculas e sem acento.')
+    ? alert('O texto deve conter apenas letras minúsculas sem acentos. Caracteres especiais são permitidos somente se forem: ! ? , .')
     : criptografaTexto(textoParaDecodificar);
 }
 
