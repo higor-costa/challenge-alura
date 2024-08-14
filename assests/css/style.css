@@ -201,3 +201,13 @@ body {
   gap: 10px;
   color: var(--branco);
 }
+
+.rodape__desenvolvedor a {
+  color: var(--branco);
+  text-decoration: none;
+  transition: text-decoration .5s;
+}
+
+.rodape__desenvolvedor a:hover {
+  text-decoration: underline;
+}
