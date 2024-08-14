@@ -7,6 +7,7 @@ const botaoCopiar = acessaElementosDom('#botao-copiar');
 const textoDecodificado = acessaElementosDom('#texto-decodificado');
 const conteinerResultado = acessaElementosDom('#conteiner-resultado');
 const mensagemPadrao = acessaElementosDom('#mensagem-padrao');
+const anoAtual = acessaElementosDom('.rodape__ano-atual');
 
 function acessaElementosDom(elemento) {
   return document.querySelector(elemento);
@@ -81,6 +82,13 @@ function copiarTexto() {
     })
     .catch((err) => console.log('erro ao copiar texto: ', err));
 }
+
+function defineAnoRodape() {
+  const data = new Date();
+  anoAtual.innerText = data.getFullYear();
+}
+
+defineAnoRodape();
 
 botaoCriptografar.addEventListener('click', verificaSeTextoValido);
 botaoDescriptografar.addEventListener('click', descriptografiaTexto);
