@@ -111,10 +111,9 @@ body {
 }
 
 .botoes__botao--descriptografar {
-  color: var(--secundaria);
-  border: 1px solid var(--secundaria);
+  color: var(--branco);
+  border: 1px solid var(--branco);
 }
-
 
 /* CONTÊINER DO RESULTADO */
 .resultado {
