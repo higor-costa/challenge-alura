@@ -77,6 +77,18 @@ function verificaSeTextoValido() {
     : criptografaTexto(textoParaDecodificar);
 }
 
+function copiarTexto() {
+  navigator.clipboard
+    .writeText(textoDecodificado.innerText)
+    .then(() => {
+      botaoCopiar.innerText = 'Copiado!';
+      setTimeout(() => {
+        botaoCopiar.innerText = 'Copiar';
+      }, 1000);
+    })
+    .catch((err) => console.log('erro ao copiar texto: ', err));
+}
+
 botaoCriptografar.addEventListener('click', verificaSeTextoValido);
 botaoDescriptografar.addEventListener('click', descriptografiaTexto);
 botaoCopiar.addEventListener('click', copiarTexto);
