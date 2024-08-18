@@ -110,7 +110,7 @@ body {
 .botoes__botao--criptografar {
   background: var(--secundaria);
   color: var(--branco);
-  margin-right: 24px;
+  margin-right: 15px;
 }
 
 .botoes__botao--descriptografar {
