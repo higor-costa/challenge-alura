@@ -212,3 +212,52 @@ body {
 .rodape__desenvolvedor a:hover {
   text-decoration: underline;
 }
+
+@media only screen and (max-width: 947px) {
+  .conteudo {
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .conteudo-conteiner {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .conteudo__caixa-texto {
+    width: 100%;
+    height: 20rem;
+    font-size: 1rem;
+  }
+
+  .botoes__botao--criptografar {
+    margin-bottom: 1rem;
+  }
+
+  .resultado {
+    width: 100%;
+  }
+
+  .resultado__conteiner-texto-decodificado {
+    max-height: 22.8rem;
+  }
+
+  .mensagem__img {
+    display: none;
+  }
+
+  .mensagem__titulo {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .botoes {
+    width: 100%;
+  }
+
+  .botoes__botao {
+    width: 100%;
+  }
+}
